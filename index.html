@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Lista de Alunos</title>
+
+<style>
+body{
+font-family: Arial;
+}
+
+li{
+margin: 8px 0;
+}
+
+button{
+margin-left: 10px;
+padding: 5px 10px;
+cursor: pointer;
+}
+</style>
+
+</head>
+<body>
+
+<h2>Lista de Alunos</h2>
+
+<ul id="listaAlunos">
+
+<li>
+Maria
+<button onclick="confirmar(this)">Confirmar</button>
+</li>
+
+<li>
+João
+<button onclick="confirmar(this)">Confirmar</button>
+</li>
+
+<li>
+Ana
+<button onclick="confirmar(this)">Confirmar</button>
+</li>
+
+<li>
+Carlos
+<button onclick="confirmar(this)">Confirmar</button>
+</li>
+
+</ul>
+
+<script>
+
+function confirmar(botao){
+
+let aluno = botao.parentElement;
+let lista = document.getElementById("listaAlunos");
+
+lista.appendChild(aluno);
+
+}
+
+</script>
+
+</body>
+</html>
